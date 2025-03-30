@@ -1,0 +1,2 @@
+import"./assets/style-D_yWi2aH.js";import{i as r}from"./assets/vendor-BbbuE1sJ.js";const s=document.querySelector(".form");s.addEventListener("submit",function(i){i.preventDefault();const o=new FormData(s),t=o.get("delay"),a=o.get("state");new Promise((e,m)=>{setTimeout(()=>{a==="fulfilled"?e(t):m(t)},t)}).then(e=>{r.success({title:"Успіх",message:`✅ Проміс виконано за ${e} мс`})}).catch(e=>{r.error({title:"Помилка",message:`❌ Проміс відхилено за ${e} мс`})}),s.reset()});
+//# sourceMappingURL=2-snackbar.js.map
